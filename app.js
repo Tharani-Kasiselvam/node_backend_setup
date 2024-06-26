@@ -7,10 +7,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
 // middleware to allow cross-origin requests from any domain
-app.use(cors({
-    origin: '*',
-    credentials: true
-}));
+app.use(cors())
 
 // middleware to parse the cookies
 app.use(cookieParser());
