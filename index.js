@@ -16,7 +16,7 @@ mongoose.connect(config.MONGODB_URI)
       console.log('Connected to MongoDB');
 
       const port = config.PORT || 8005
-      
+
       // start the server
       app.listen(port, () => {
         console.log(`Server is running on: ${port}`);
